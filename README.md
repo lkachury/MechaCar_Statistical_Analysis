@@ -39,13 +39,19 @@ Using R, design a linear model that predicts the mpg of MechaCar prototypes usin
 Using R, create a summary statistics table from the MechaCar [Suspension_Coil.csv](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) file to show the suspension coil’s PSI continuous variable across all manufacturing lots and the following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
 1. The [Suspension_Coil.csv](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) file is imported and read into a dataframe:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762210-c2757a8f-2a66-447a-9e80-3e556544d46e.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762274-8719d55c-489b-473b-bc9d-9cdccefe05a7.png)
 
 2. An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762356-7e7e47d8-81b3-4a64-bbe7-0249636d9dae.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762520-d205a3a7-909b-47ff-b3c4-f25069f429e0.png)
 
 3. An RScript is written to create a lot summary dataframe that has the mean, median, variance, and standard deviation for each manufacturing lot:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762408-78fc14f2-f35b-410b-9025-60611513752b.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762570-716b4f5c-8303-498a-9ef2-b45249c6ce76.png)
 
 4. There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually:
-
+    - **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?** <br /> Based on the total summary dataframe figure above, the variance of the suspension coils for all manufacturing lots in total is 62.29356, which meets the current design specifications since the variance of the suspension coils does not exceed 100 pounds per square inch. Based on the lot summary dataframe figure above, Lot 1 and Lot 2 meet the current design specifications with variances of 0.9795918 and 7.4693878 respectively. Lot 3 has a variance of 170.2861224 which does not meet the current design specifications since the variance of the suspension coils exceeds 100 pounds per square inch.
 
 ### Deliverable 3: T-Tests on Suspension Coils
 Using R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
