@@ -74,11 +74,13 @@ Using R, perform t-tests to determine if all manufacturing lots and each lot ind
 Using R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
 The statistical study design has the following:
-1. A metric to be tested is mentioned:
+1. A metric to be tested is mentioned: <br /> With the increased concerns of car emissions and air pollution, enticing federal tax credits for electric and hybrid cars create a demand for more environamentally aware consumers. A metric to be tested by MechaCar against the competition could be city and highway fuel efficiency.
 
 2. A null hypothesis or an alternative hypothesis is described: 
+    - H0: MechaCar and the competition have the same city and highway fuel efficiencies. 
+    - Ha: MechaCar and the competition do not have the same city and highway fuel efficiencies.
 
-3. A statistical test is described to test the hypothesis:
+3. A statistical test is described to test the hypothesis: <br /> 
 
 4. The data for the statistical test is described: 
 
