@@ -31,6 +31,10 @@ Using R, design a linear model that predicts the mpg of MechaCar prototypes usin
 <br /> ![image](https://user-images.githubusercontent.com/108038989/195750961-559dcfb0-999d-42d2-95b3-2dcae50536a9.png)
 
 4. There is a summary that addresses all three questions:
+    - Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+    ???
+    - Is the slope of the linear model considered to be zero? Why or why not?
+    - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 ### Deliverable 2: Create Visualizations for the Trip Analysis
 Using R, create a summary statistics table from the MechaCar [Suspension_Coil.csv](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) file to show the suspension coil’s PSI continuous variable across all manufacturing lots and the following PSI metrics for each lot: mean, median, variance, and standard deviation.
