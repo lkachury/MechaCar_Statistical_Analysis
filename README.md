@@ -21,10 +21,14 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 Using R, design a linear model that predicts the mpg of MechaCar prototypes using several variables from the [MechaCar_mpg.csv file](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv). 
 
 1. The [MechaCar_mpg.csv file](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv) is imported and read into a dataframe:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195750388-3e71244c-8710-480e-9878-42bcf695bfe1.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195750731-5d504082-ed80-4db4-99c9-be01caff682f.png)
 
 2. An RScript is written for a linear regression model to be performed on all six variables:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195750818-e4e2b1a8-fbb0-4fa4-b598-e69cba8cc33a.png)
 
 3. An RScript is written to create the statistical summary of the linear regression model with the intended p-values:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195750961-559dcfb0-999d-42d2-95b3-2dcae50536a9.png)
 
 4. There is a summary that addresses all three questions:
 
