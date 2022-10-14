@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Overview 
-AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. The purpose of this analysis is to review the production data for insights that may help the manufacturing team by:
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. The purpose of this analysis is to utlize R and RStudio to review the production data for insights that may help the manufacturing team by:
 - Performing multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
 - Collecting summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 - Running t-tests to determine if the manufacturing lots are statistically different from the mean population
@@ -39,33 +39,50 @@ Using R, design a linear model that predicts the mpg of MechaCar prototypes usin
 Using R, create a summary statistics table from the MechaCar [Suspension_Coil.csv](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) file to show the suspension coil’s PSI continuous variable across all manufacturing lots and the following PSI metrics for each lot: mean, median, variance, and standard deviation.
 
 1. The [Suspension_Coil.csv](https://github.com/lkachury/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv) file is imported and read into a dataframe:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762210-c2757a8f-2a66-447a-9e80-3e556544d46e.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762274-8719d55c-489b-473b-bc9d-9cdccefe05a7.png)
 
 2. An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762356-7e7e47d8-81b3-4a64-bbe7-0249636d9dae.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762520-d205a3a7-909b-47ff-b3c4-f25069f429e0.png)
 
 3. An RScript is written to create a lot summary dataframe that has the mean, median, variance, and standard deviation for each manufacturing lot:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762408-78fc14f2-f35b-410b-9025-60611513752b.png)
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195762570-716b4f5c-8303-498a-9ef2-b45249c6ce76.png)
 
 4. There is a summary that addresses the design specification requirement for all the manufacturing lots and each lot individually:
-
+    - **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?** <br /> Based on the total summary dataframe figure above, the variance of the suspension coils for all manufacturing lots in total is 62.29356, which meets the current design specifications since the variance of the suspension coils does not exceed 100 pounds per square inch. Based on the lot summary dataframe figure above, Lot 1 and Lot 2 meet the current design specifications with variances of 0.9795918 and 7.4693878 respectively. Lot 3 has a variance of 170.2861224 which does not meet the current design specifications since the variance of the suspension coils exceeds 100 pounds per square inch.
 
 ### Deliverable 3: T-Tests on Suspension Coils
 Using R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 1. An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195765307-2a1e0e04-0b74-4eb6-a4da-83406e1feaf1.png)
 
 2. An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population:
+    - Lot 1: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765383-e180ee94-3111-4082-a502-9f004bba83cf.png)
+    - Lot 2: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765459-3bc17f40-d955-4742-853b-5000eac9de3b.png)
+    - Lot 3: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765498-f263627c-3aac-4013-a831-17c99ea73964.png)
 
 3. There is a summary of the t-test results across all manufacturing lots and for each lot:
+    - From the one-sample t-test that compares all manufacturing lots against mean PSI of the population, the mean of the sample is 1498.78 and the p-value is 0.06028. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between all manufacturing lots against the population mean of 1500 PSI, and thus we fail to reject the null. 
+    - From the one-sample t-test that compares manufacturing Lot 1 against mean PSI of the population, the mean of the sample is 1500 and the p-value is 1. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between manufacturing Lot 1 against the population mean of 1500 PSI, and thus we fail to reject the null.
+    - From the one-sample t-test that compares manufacturing Lot 2 against mean PSI of the population, the mean of the sample is 1500.2 and the p-value is 0.6072. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between manufacturing Lot 2 against the population mean of 1500 PSI, and thus we fail to reject the null.
+    - From the one-sample t-test that compares manufacturing Lot 3 against mean PSI of the population, the mean of the sample is 1496.14 and the p-value is 0.04168. Since the p-value is below the assumed significance level of 0.05, there is a statistically significant difference between manufacturing Lot 3 against the population mean of 1500 PSI, and thus we reject the null.
 
 ### Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 Using R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
 
 The statistical study design has the following:
-1. A metric to be tested is mentioned:
+1. A metric to be tested is mentioned: <br /> With the increased concerns of car emissions and air pollution, enticing federal tax credits for electric and hybrid cars create a demand for more environamentally aware consumers. A metric to be tested by MechaCar against the competition could be city and highway fuel efficiency.
 
 2. A null hypothesis or an alternative hypothesis is described: 
+    - H0: MechaCar and the competition have the same city and highway fuel efficiencies. 
+    - Ha: MechaCar and the competition do not have the same city and highway fuel efficiencies.
 
-3. A statistical test is described to test the hypothesis:
+3. A statistical test is described to test the hypothesis: <br /> One possible statistical test for this hypothesis is Analysis of variance (ANOVA) since this test determines if there is a statistical difference between the distribution means from multiple samples (both types of fuel efficiencies at MechaCar and the competition). 
 
-4. The data for the statistical test is described: 
+4. The data for the statistical test is described: <br /> In order to perfom the statistical test, we will need Manufacturer, Vehicle, and Fuel Efficiency data for both types of cars.
 
 ## Summary 
+R and RStudio were used to perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes, collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots, run t-tests to determine if the manufacturing lots are statistically different from the mean population, and design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
