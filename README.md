@@ -57,10 +57,18 @@ Using R, create a summary statistics table from the MechaCar [Suspension_Coil.cs
 Using R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 1. An RScript is written for t-test that compares all manufacturing lots against mean PSI of the population:
+<br /> ![image](https://user-images.githubusercontent.com/108038989/195765307-2a1e0e04-0b74-4eb6-a4da-83406e1feaf1.png)
 
 2. An RScript is written for three t-tests that compare each manufacturing lot against mean PSI of the population:
+    - Lot 1: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765383-e180ee94-3111-4082-a502-9f004bba83cf.png)
+    - Lot 2: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765459-3bc17f40-d955-4742-853b-5000eac9de3b.png)
+    - Lot 3: <br /> ![image](https://user-images.githubusercontent.com/108038989/195765498-f263627c-3aac-4013-a831-17c99ea73964.png)
 
 3. There is a summary of the t-test results across all manufacturing lots and for each lot:
+    - From the one-sample t-test that compares all manufacturing lots against mean PSI of the population, the mean of the sample is 1498.78 and the p-value is 0.06028. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between all manufacturing lots against the population mean of 1500 PSI, and thus we fail to reject the null. 
+    - From the one-sample t-test that compares manufacturing Lot 1 against mean PSI of the population, the mean of the sample is 1500 and the p-value is 1. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between manufacturing Lot 1 against the population mean of 1500 PSI, and thus we fail to reject the null.
+    - From the one-sample t-test that compares manufacturing Lot 2 against mean PSI of the population, the mean of the sample is 1500.2 and the p-value is 0.6072. Since the p-value is above the assumed significance level of 0.05, there is not a statistically significant difference between manufacturing Lot 2 against the population mean of 1500 PSI, and thus we fail to reject the null.
+    - From the one-sample t-test that compares manufacturing Lot 3 against mean PSI of the population, the mean of the sample is 1496.14 and the p-value is 0.04168. Since the p-value is below the assumed significance level of 0.05, there is a statistically significant difference between manufacturing Lot 3 against the population mean of 1500 PSI, and thus we reject the null.
 
 ### Deliverable 4: Design a Study Comparing the MechaCar to the Competition
 Using R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
