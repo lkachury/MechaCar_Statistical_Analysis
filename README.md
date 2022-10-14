@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Overview 
-AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. The purpose of this analysis is to review the production data for insights that may help the manufacturing team by:
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. The purpose of this analysis is to utlize R and RStudio to review the production data for insights that may help the manufacturing team by:
 - Performing multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes
 - Collecting summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots
 - Running t-tests to determine if the manufacturing lots are statistically different from the mean population
@@ -80,8 +80,9 @@ The statistical study design has the following:
     - H0: MechaCar and the competition have the same city and highway fuel efficiencies. 
     - Ha: MechaCar and the competition do not have the same city and highway fuel efficiencies.
 
-3. A statistical test is described to test the hypothesis: <br /> 
+3. A statistical test is described to test the hypothesis: <br /> One possible statistical test for this hypothesis is Analysis of variance (ANOVA) since this test determines if there is a statistical difference between the distribution means from multiple samples (both types of fuel efficiencies at MechaCar and the competition). 
 
-4. The data for the statistical test is described: 
+4. The data for the statistical test is described: <br /> In order to perfom the statistical test, we will need Manufacturer, Vehicle, and Fuel Efficiency data for both types of cars.
 
 ## Summary 
+R and RStudio were used to perform multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes, collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots, run t-tests to determine if the manufacturing lots are statistically different from the mean population, and design a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
